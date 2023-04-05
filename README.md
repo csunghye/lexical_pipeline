@@ -14,6 +14,9 @@ To run this program, you will need to install the following packages:
 - You will need transcripts (whether automatically transcribed or manually transcribed) to run this program. 
 - This program assumes that transcripts are in a WebTrans-like format, where 6 or 7 columns are tab-separated in this order: [(Kit,) Audio, Start, End, Text, Speaker, Task]. The column names do not need to be like this, but the order must be in this specific order with the exception that the first column (Kit) can be omited. If not in this format, please reformat your transcripts before running. 
 
+## How this program works
+[to be explained soon]
+
 ## Citations
 It is very important to cite all of the following papers when you use the pipeline:
 ### For the lexical measures:
