@@ -21,7 +21,7 @@ def read_transcript(transcript, args):
 
     # if speaker label is used, only return speech of the speaker
     if args.speaker_label:
-        text = ' '.join(transcript[transcript.Speaker==args.speaker_label]['Text'].tolist())
+        text = ' '.join(transcript[transcript['Speaker']==args.speaker_label]['Text'].tolist())
     else:
         text = ' '.join(transcript['Text'].tolist())
 
