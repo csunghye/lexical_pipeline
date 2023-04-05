@@ -34,5 +34,7 @@ It is very important to cite all of the following papers when you use the pipeli
 ### For the current pipeline:
 - 
 
+## Column names
+You can check what the column names mean in the lexical_glossary.csv file!
 
 If you encounter any issues, please contact me via csunghye@sas.upenn.edu
