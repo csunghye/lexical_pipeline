@@ -1,11 +1,11 @@
 ### Usage1: 
-# python3 lexical_pipeline_0_3_2.py -output_file ../speechbiomarkers/summarized_lexical_20210413.csv -input_folder ../speechbiomarkers/picture -filetype .txt -label_existing False
+# python3 lexical_pipeline_0_3_2.py -output_file ../speechbiomarkers/summarized_lexical_20210413.csv -input_folder ../speechbiomarkers/picture -filetype .txt 
 ## V0.3.2: 2023-April-4
 
 ## Check if all packages are installed and if not, install them. 
 
 import spacy
-import argparse, glob, platform
+import os, argparse, glob, platform
 import pandas as pd
 import numpy as np
 from lexicalrichness import LexicalRichness
@@ -59,7 +59,7 @@ def main(args):
 		# run second-pass pos tagging on cleaned texts only (without dysfluency markers)
 		doc = nlp(cleaned_text)
 		# get lexical diversity measures (lex is used to calculate lexical diversity)
-		lex = LexicalRichness(cleaned_text, use_TextBlob = True)
+		lex = LexicalRichness(cleaned_text)
 
 		# count pos categories and dysfluency markers
 		pos_counts, tag_counts, uniqueAllCount, uniqueContentCount, uniqueNounCount, uniqueAdjCount, uniqueVerbCount, uniqueAdvCount = count_pos(doc)
@@ -137,8 +137,7 @@ if __name__ == '__main__':
 	parser.add_argument('-output_file', type=str, required=True, help='Name the output file')
 	parser.add_argument('-input_folder', type=str, required=True, help='Folder containing input documents')
 	parser.add_argument('-filetype', type=str, required=True, help='Input file extensions')
-	parser.add_argument('-label_existing', required=True, help='Boolean for having a speaker label or not')
-	parser.add_argument('-speaker_label', required=False, nargs='+', help='Speaker label of interest')
+	parser.add_argument('-speaker_label', type=str, required=False, help='Speaker label of interest')
 	args = parser.parse_args()
 	main(args)
 	
