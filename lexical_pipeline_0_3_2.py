@@ -14,7 +14,7 @@ from lexicalLibs.count_words import convert100, count_pos
 from lexicalLibs.rate_words import get_phondict, attach_lexical, lexical_summary
 
 # location of the aggregated lexical measure file
-LEXICAL_LOOKUP = './all_measures_raw.csv'
+LEXICAL_LOOKUP = 'all_measures_raw.csv'
 
 # load nlp model
 nlp = spacy.load('en_core_web_lg')
