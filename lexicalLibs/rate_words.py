@@ -1,5 +1,6 @@
 import pandas as pd
 import nltk
+nltk.download('cmudict')
 
 # calculate number of phonemes and syllables using the CMU pronouncing dict
 def get_phondict():
