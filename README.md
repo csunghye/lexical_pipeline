@@ -20,22 +20,16 @@ To run this program, you will need to install the following packages: (need to i
 ## Citations
 It is very important to cite all of the following papers when you use the pipeline:
 ### For the lexical measures:
-- Word frequency:
-- Word familiarity:
-- Semantic Ambiguity:
-- Age of acquisition:
-- Concretenss:
-- Word length:
-- Lexical diversity: 
-
-### For the dependencies used:
-- spacy:
-- LexicalRichness:
-- NLTK:
-- CMU Pronouncing Dictionary:
+- Word frequency: https://link.springer.com/article/10.3758/BRM.41.4.977
+- Word familiarity: https://link.springer.com/article/10.3758/s13428-018-1077-9
+- Semantic Ambiguity: https://link.springer.com/article/10.3758/s13428-012-0278-x
+- Age of acquisition: https://link.springer.com/article/10.3758/s13428-018-1077-9
+- Concretenss: https://link.springer.com/article/10.3758/s13428-013-0403-5
+- Word length: http://www.speech.cs.cmu.edu/cgi-bin/cmudict
+- Lexical diversity: https://www.tandfonline.com/doi/pdf/10.1080/09296171003643098
 
 ### For the current pipeline:
-- 
+- Cho, Sunghye, Naomi Nevler, Sharon Ash, Sanjana Shellikeri, David J. Irwin, Lauren Massimo, Katya Rascovsky, Christopher Olm, Murray Grossman, and Mark Liberman. (2021). Automated analysis of lexical features in Frontotemporal Degeneration. Cortex 137, 215-231. https://www.sciencedirect.com/science/article/abs/pii/S001094522100037X
 
 ## Column names
 You can check what the column names mean in the lexical_glossary.csv file!
